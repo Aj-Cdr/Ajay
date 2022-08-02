@@ -56,10 +56,9 @@
 		document.getElementById("share").addEventListener('click', () => {
 			if (navigator.share !== undefined) {
 				let ttl = "Ajay Sathish Preetha's Developer Portfolio";
-				let txt = "Ajay Sathish Preetha's Developer Portfolio. Student, Developer, Bro, Friend, & Blogger. Check out his github repos, blogs, discord etc. Make sure to share it with your friends and family. Thank You!";
-				let url = "https://spaboi.github.io/Ajay/";
+				let txt = "Ajay Sathish Preetha's Developer Portfolio. Student, Developer, Bro, Friend, & Blogger. Check out his github repos, blogs, discord etc. Make sure to share it with your friends and family. Thank You! Link: https://spaboi.github.io/Ajay/";
 				//use text and/or url
-				navigator.share({ title: ttl, text: txt, url: url })
+				navigator.share({ title: ttl, text: txt,})
 					.then(_ => console.log('success.'))
 					.catch((err) => console.log(err));
 			} else {
